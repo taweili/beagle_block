@@ -1,0 +1,658 @@
+BYOB4 (Snap) history
+---------------------
+110511
+------
+* Scrolling by dragging
+* Scrolling by dragging velocity
+
+110516
+------
+* Autoscrolling
+
+110518
+------
+* Textures
+
+110524
+------
+* CommandSlotMorphs (%c)
+
+110527
+------
+* Templates
+* Padding for ScrollFrames
+
+110530
+------
+* C-slots only attach to blocks' tops (no longer also to bottoms)
+
+110531
+------
+* ReporterBlockMorphs
+
+110628
+------
+* World menu in every Morph's developersMenu
+* changed the standard to "sharp shadows" because of Firefox5 bug
+
+110630
+------
+* StringMorphs and TextMorph notify their parents of layout changes
+* TypeInSlotMorphs (round - %n - and rectangular - %s -)
+ 
+110705
+------
+* block specs
+
+110706
+------
+* BooleanSlotMorphs (%b)
+* Color mixing
+* contrast setting for SyntaxElementMorphs
+* exit confirmation
+
+110707
+------
+* BlockMorph color changing
+* entry field tabbing (Firefox and Opera only)
+* label multi-line wrapping for command blocks
+
+110708
+------
+* extrapolate blockSpec upon label part drop
+
+110711
+------
+* optional intra-block-label word wrap (flag) layout setting
+
+110712
+------
+* rectangular reporter layout
+* label mutli-line wrapping for reporters
+* user-definable label line breaks (%br)
+* font size customizable for individual menus
+* ArrowMorphs
+
+110714
+------
+* optional drop-down menu for type-in slots
+* read-only menus for type-in slots (%inst, %var, %lst, %obj, %eff, 
+  %dir, %cst, %snd, %key, %idx, %msg, %att, %fun, %typ)
+* global pixel color sensing
+* renamed TypeInSlotMorph to InputSlotMorph
+
+110718
+------
+* ColorSlotMorphs (%clr)
+* collision detection groundwork
+
+110719
+------
+* high-level documentation and code comments
+* optional blurred slot shades (off by default)
+
+110720
+------
+* HatBlocks
+
+110721
+------
+* scrollBarSize can now optionally be specified individually
+* block highlighting
+* specs for any-unevaluated and Boolean-unevaluated inputs
+
+110722
+------
+* stringField settable as numeric, supresses textual input
+* editable numeric input slots supress textual type-in
+* evaluation helper methods and properties
+* collision detection
+
+110726
+------
+* MultiArgMorphs (%mult%x)
+
+110727
+------
+* Morphic: fullBounds() now ignores hidden submorphs
+* MultiArgMorphs: Optional label and minimum inputs settings, '%inputs'
+* Morphic: simplified BoxMorph rendering
+* Same-colored (white), semi-transparent reporter drop feedbacks
+
+110804
+------
+* evaluator: ThreadManager, Process, StackFrame, VariableFrame
+
+110810
+------
+* nasciturus: objects, gui
+
+110811
+------
+* Morphic: broken rect fix for float-positioned Morphs
+* Blocks: straight bottom edges for stop-blocks
+* PenMorph: round line ends
+
+110816
+------
+* Morphic: SpeechBubbleMorphs and bubble help for menus/buttons
+
+110817
+------
+* Threads: evaluating reporters
+* showValue bubbles
+
+110818
+------
+* optimizations for menu bubble help and Blocks layout
+
+110823
+------
+* Sprite-scoped variables
+
+110824
+------
+* numerical virtual keyboard (pop-up-sliders - taken out again)
+* sliders now work with negative floor numbers
+* mouse wheel scroll events (thanks, Nathan!)
+
+110826
+------
+* TemplateSlotMorphs (%t, %mult%t, %scriptVars)
+* script variables
+* lockable inputs
+
+110911
+------
+* Morphic: PenMorph.setHeading() fixed
+
+110912
+------
+* Threads: renamed StackFrame to Context
+* Blocks: persistent input default values
+
+110913
+------
+* basic Lambda primitives
+* basic Lambda visualization (showBubble)
+
+110914
+------
+* c-slots in primitives are now static by default
+* basic THE BLOCK, CALL and REPORT
+
+110919
+------
+* formal parameters
+* recursion
+* closures
+
+110922
+------
+* implicit parameters
+
+110923
+------
+* error catching for block evaluation
+
+110926
+------
+* basic message broadcasting
+* thread forking (LAUNCH block)
+
+110927
+------
+* WAIT block
+
+110928
+------
+* GLIDE block
+
+111006
+------
+* force yield after timeout
+
+111007
+------
+* swooshy hat block tops (instead of circle segments)
+
+111009
+------
+* call/cc
+
+111010
+------
+* hybrid scope
+
+111012
+------
+* autolambdafying CSlotMorphs (C-shaped) and CommandSlotMorphs (inline)
+* Morphic: right mouse click emulation for Mac
+
+111017
+------
+* another take on continuations
+
+111019
+------
+* Morphic: scrolling speedup
+
+111020
+------
+* unevaluated FunctionSlotMorphs (%f)
+* autolambdafying ReporterSlotMorphs (%r, %p)
+
+111021
+------
+* GUI: CellMorphs (for stage watchers)
+
+111025
+------
+* GUI: WatcherMorphs
+* SHOW VARIABLE, HIDE VARIABLE blocks
+
+111026
+------
+* Blocks: empty choice for input drop down menus
+* automatic positioning of new watchers
+* watchers on temporary variables are deleted by HIDE VARIABLE block (not hidden)
+* HIDE VARIABLE with empty input deletes all watchers on temporary vars
+
+111027
+------
+* more extensive Error catching
+* slider for numerical text entries in "mobile mode"
+* bigger blocks in "mobile mode"
+
+111031
+------
+* new: widgets.js
+* PushButtons
+
+111102
+------
+* Morphic: StringMorph shadows
+
+111103
+------
+* widgets: ToggleMorphs (check boxes and radio buttons)
+* non-variable watchers
+* checkbox toggling for variable watchers
+
+111108
+------
+* Lists
+
+111109
+------
+* ListWatchers (basics)
+
+111111
+------
+* Morphic: visibleBounds() bug fix
+
+111114
+------
+* Morphic: fullImageClassic() for ListWatcherMorphs
+* Threads: MultiArgMorph now use Lists instead of JS-Arrays
+* List Blocks
+* GUI: adding/removing variables doesn't make the palette jump to the top
+* Blocks: list type slots
+
+111115
+------
+* Morphic: more tolerant grabbing
+* Lists: synchronized Watcher updating (speed-up)
+
+111116
+------
+* Lists: conservative watcher updating (speed-up)
+* GUI: logo pane and 'about' box
+
+111118
+------
+* Lists: watcher shows list range (speed-up, stability)
+
+111121
+------
+* Atomicity (WARP)
+* REPEAT UNTIL
+* WAIT UNTIL
+
+111123
+------
+* hybrid lists (arrayed and linked)
+* CONS and CDR
+
+111124
+------
+* layout optimization for dropped and snapping blocks (thanks, John!)
+* Equality testing for lists (thanks, Brian!)
+
+111128
+------
+* layout optimization merged into Morphic.js -> trackChanges
+
+111129
+------
+* Widgets: DialogBoxMorph basics
+
+111130
+------
+* Widgets: AlignmentMorphs
+* keyboard events for DialogBoxMorphs
+
+111202
+------
+* Widgets: InputFieldMorphs
+* Prompters based on DialogBoxes
+* Renaming of input templates
+* Morphic keyboard enhancements
+
+111205
+------
+* new primitives: MOUSE X, MOUSE Y, TIMER, RESET TIMER
+
+111207
+------
+* byob.js (CustomBlockDefinition, CustomCommandBlockMorph)
+
+111209
+------
+* BlockEditor basics for CustomCommandBlocks
+
+111212
+------
+* BlockDialogMorph (basics)
+* CustomReporterBlockMorph
+
+111213
+------
+* call/cc for lambdas and custom blocks
+
+111214
+------
+* feature: deleting block instances and custom block definitions
+
+120106
+------
+* InputSlotEditor basics
+* bigger tick for radio buttons
+* PushButtons redone for WebKIT 2 compatibility
+
+120109
+------
+* Morphic: single quote input for WebKIT 2 compatibility
+* BYOB: BlockInputFragmentMorphs
+
+120115
+------
+* BlockLabelPlaceHolderMorphs
+* BlockInputDialogMorph (short form)
+
+120119
+------
+* MOD, TRUE and FALSE reporter blocks
+* AND, OR, NOT reporter blocks
+* BROADCAST AND WAIT command block
+
+120120
+------
+* Morphic: question mark input for WebKIT 2 compatibility (does it break on Windows?)
+* Morphic: turtle tracks round endings for WebKIT 2 compatibility (cannot use closePath())
+
+120123
+------
+* Threads: tail call elimination
+
+120125
+------
+* STORE: serializing, saving and loading projects, first pass, all by Nathan
+* HatBlock bezier curve fixed width
+* settings for AlignmentMorph regarding handling of hidden Morphs
+* GUI enhancements
+* input slot long form dialog variant outline
+* pointless filters in most FORINS in response to Nathan's derogatory comments :-)
+
+120127
+------
+* input slot long form dialog - basic (single) input types
+
+120130
+------
+* input slot long form dialog - multiple inputs
+* input slot long form dialog - default input values
+
+120131
+------
+* upvar GUI in input slot long form dialog (w/o upvar functionality)
+
+120201
+------
+* upvars in %var slot drop-down menu
+
+120202
+------
+* more primitives in Motion, Looks and Pen categories
+
+120203
+------
+* Morphic: horizontal mouse wheel scrolling (thanks for this fix, Nathan!)
+* more primitives in the Pen category
+
+120206
+------
+* Morphic: color specifiable in String() constructor
+* Widgets: ToggleButtonMorphs
+* Objects: block categories
+* GUI: tabbed palette mock-up (not yet within a real GUI)
+
+120207
+------
+* BYOB: categories (colors) for new custom blocks
+
+120208
+------
+* categories and block type editing for existing custom blocks
+
+120209
+------
+* Morphic: formatting capabilities for Menus and ListMorphs
+* Morphic: optional 'own properties' highlighting in the Inspector's "show" menu
+
+120214
+------
+* multiple sprites & lots of new stuff in all modules
+* Morphic: dragging optimization
+* Nathan's fixes to Morphic (shadow fix, mouse wheel fix)
+
+120215
+------
+* scriptable and programmable stage, selectable in the corral
+* stage watchers with "active", auto-updating object name labels
+* IF ON EDGE BOUNCE primitive, still buggy
+* GUI fixes, all frame morphs in the corral now reject object drops
+
+120216
+------
+* saving & loading, xml serialization, thanks, Nathan!
+
+120217
+------
+* Morphic: introducing combined mouse-keyboard events
+* GUI: Project label
+
+120221
+------
+* user and development modes (shift-click on Snap! logo)
+* Open Project dialog (thanks, Nathan)
+* blocks caching for primitives and custom blocks
+* custom block prototype edits visible in the palette while editing
+* sprite duplication
+* custom block definition duplication and re-binding
+* the only sprite in the IDE is now deletable
+* primitive blocks for GHOST effect
+
+120222
+------
+* Morphic: Tabbing among input fields fix
+* Threads: REPORT primitive fix
+
+120224
+------
+* STOP BLOCK primitive
+* error catching turns off in development mode (on in user mode)
+
+120226
+------
+* primitive control structures adjusted to new REPORT rule
+
+120229
+------
+* global variables
+* hybrid lists CDR fix (thanks, Brian!)
+* debugging primitives (alert, console.log) in development mode
+* all libraries edited to conform to JsLint's latest petty rules ('else' after 'return')
+
+120301
+------
+* store.js: color slot and global vars patch (thanks, Nathan!)
+* blocks.js: bug fix for drop-down menus (wouldn't allow selecting empty)
+
+120305
+------
+* upvars
+* globals vars serialization fix
+* MultiArgs: shift-clicking on an arrow repeats action 3 times
+
+120306
+------
+* Morphic: prevent text edits from reversing
+* added "WITH INPUT LIST" variants for RUN/LAUNCH/CALL primitives - commented out
+* changed '%inputs' slot type to non-static (makes "w/input list" redundant)
+* Threads: fixed tail-call optimization induced bug in pushContext()
+* WHEN I AM CLICKED hat block (control)
+* WHEN KEY PRESSED hat block (control)
+* MOUSE DOWN? predicate (sensing)
+* KEY PRESSED? predicate (sensing)
+
+120307
+------
+* object collision detection (TOUCHING? predicate block for Sprites)
+* poly-key state detection
+
+120308
+------
+* Morphic: SpeechBubbleMorph orientation left/right
+* Threads: empty block definitions no longer raise an exception
+* SAY primitive command block for Sprites
+
+120309
+------
+* SAY _ FOR _ SECS primitive command block for Sprites
+* Morphic: thought bubble display variant of SpeechBubbleMorph
+* THINK and THINK FOR SECS primitive command blocks for Sprites
+* STAMP primitive command block for Sprites
+* ROUND, JOIN, LETTER OF, LENGTH OF, UNICODE OF and UNICODE AS LETTER primitive reporters
+
+120313
+------
+* Widgets: ToggleElementMorph, TabMorph
+* BlockEditor: Pictographic type buttons
+* IDE: Tabs for scripts/costumes/sounds
+
+120314
+------
+* JOIN becomes variadic (Jens isn't enthusiastic about it)
+* About text changed according to Mitch's suggestion
+* BYOB: JaggedBlockMorph
+* pictographic type buttons in the short form input dialog
+
+120315
+------
+* Morphic: colored shadows
+* Widgets: ToggleMorph with embedded toggle elements
+* pictographic slot type buttons in the long form input dialog
+* palette speedup
+* Error message when RUN/CALL/LAUNCHing a block w/o passing the expected no. of inputs
+* Illegal drops prevented in user mode (enabled in dev mode)
+
+120316
+------
+* long form input dialog speedup (pictograms are now plain pictures instead of Toggles)
+* Morphic: Morphs behind another one no longer receive mouseEnter/mouseLeave events
+* Blocks: ScriptPanes behind other Morphs no longer show drop target feedbacks
+
+120319
+------
+* THREADS: unevaluated inputs
+* Morphic: detect and respect minimum font size renderable
+* Morphic: text selection display fix for FF
+
+120320
+------
+* Morphic: droppedImage() event
+
+120321
+------
+* Costume, CostumeEditorMorph, CostumeIconMorph
+
+120322
+------
+* GUI: WardrobeMorph
+* Slider and ScrollFrame colors
+
+120323
+------
+* Morphic: handle multiple image file drops
+
+120327
+------
+* Costumes, first iteration
+
+120328
+------
+* Costumes: rotation center functionality
+
+120329
+------
+* Sprites: the rotation center now is the pen tip
+
+120331
+------
+* Stage: extra pen trail layer
+* Morphic: texture handling (eliminating canvas patterns b/c of Chrome problems)
+* Objects: motion precision fixes
+
+120401
+------
+* settings menu: touchscreen settings
+* thread safety option
+* store.js: Costumes & pen trails support. Thanks, Nathan!
+* context menus for watchers (thx, Nathan!)
+
+120402
+------
+* pressing the stop sign makes all speech bubbles disappear
+* null continuations now behave the same as STOP SCRIPT blocks
+
+120403
+------
+* minWidth property for SyntaxElements
+
+120406
+------
+* ASK/ANSWER for sprites
+
+120403
+------
+* ASK/ANSWER for the stage
+
+120416
+------
+* custom block prototype slot type and default value indicators
+* Sounds, first pass (thanks, Ian!)
+
+120417
+------
+* Snap! Build Your Own Blocks. Alpha

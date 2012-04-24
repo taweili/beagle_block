@@ -1,0 +1,16 @@
+Morphic	9856
+Blocks	5880
+Objects	4218
+BYOB	2441
+Widgets	2236
+GUI	2030
+Threads	1910
+Store	1190
+Lists	 645
+HTML	  33
+------------
+LOC	30.439
+
+total 783 KB
+
+compilable to 408 KB (81 KB gzipped)
